@@ -24,5 +24,13 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ```
 # vue导出数据到excel中
+安装excel相关的依赖
+npm install file-saver --save
+npm install xlsx --save
+
+npm install script-loader --save-dev
+
+具体操作可见https://blog.csdn.net/wlf2601567/article/details/81743487
+
 
 ```
