@@ -114,7 +114,7 @@ export function export_table_to_excel(id) {
 
   var wbout = XLSX.write(wb, {bookType: 'xlsx', bookSST: false, type: 'binary'});
 
-  saveAs(new Blob([s2ab(wbout)], {type: "application/octet-stream"}), "test.xlsx")
+  saveAs(new Blob([s2ab(wbout)], {type: "application/octet-stream"}), "test.xls")
 }
 
 function formatJson(jsonData) {
@@ -137,5 +137,5 @@ export function exportJsonToExcel(th, jsonData, defaultTitle) {
 
   var wbout = XLSX.write(wb, {bookType: 'xlsx', bookSST: false, type: 'binary'});
   var title = defaultTitle || '列表'
-  saveAs(new Blob([s2ab(wbout)], {type: "application/octet-stream"}), title + ".xlsx")
+  saveAs(new Blob([s2ab(wbout)], {type: "application/octet-stream"}), title + ".xls")
 }
